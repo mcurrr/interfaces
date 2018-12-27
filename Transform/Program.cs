@@ -8,14 +8,19 @@ namespace Transform
     {
         static void Main(string[] args)
         {
+            TextWriter outputStream = Console.Out;
+
             Console.WriteLine("enter some letters");
-            RainbowTextTransform rainbowed = new RainbowTextTransform();
             string input = Console.ReadLine();
 
-            TextWriter outputStream = Console.Out;
+            RainbowTextTransform rainbowed = new RainbowTextTransform();
             rainbowed.Output(input, outputStream);
-
             Console.WriteLine();
+
+            BackwardsTextTransform backwards = new BackwardsTextTransform();
+            backwards.Output(input, outputStream);
+            Console.WriteLine();
+
             Console.ReadKey();
         }
     }

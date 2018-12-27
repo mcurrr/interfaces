@@ -19,6 +19,9 @@ namespace Transform
         {
             if (String.IsNullOrEmpty(input)) return;
 
+            ConsoleColor initialColor = Console.ForegroundColor;
+
+            // changing forground color for each character
             input.ToList().ForEach(x =>
             {
                 var randomEnumIndex = this._random.Next(this._values.Length);
@@ -27,6 +30,9 @@ namespace Transform
                 Console.ForegroundColor = (ConsoleColor)randomValue;
                 outputStream.Write(x);
             });
+
+            // back to initial
+            Console.ForegroundColor = initialColor;
         }
     }
 }

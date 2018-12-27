@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "Transform/1.0.0": {
-        "dependencies": {
-          "TransformLibrary": "1.0.0"
-        },
-        "runtime": {
-          "Transform.dll": {}
-        }
-      },
       "TransformLibrary/1.0.0": {
         "runtime": {
           "TransformLibrary.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "Transform/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "TransformLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,

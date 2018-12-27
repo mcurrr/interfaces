@@ -9,3 +9,6 @@ C:\Users\c3po\source\repos\Transform\Transform\bin\Debug\netcoreapp2.1\Transform
 C:\Users\c3po\source\repos\Transform\Transform\bin\Debug\netcoreapp2.1\Transform.pdb
 C:\Users\c3po\source\repos\Transform\Transform\obj\Debug\netcoreapp2.1\Transform.dll
 C:\Users\c3po\source\repos\Transform\Transform\obj\Debug\netcoreapp2.1\Transform.pdb
+C:\Users\c3po\source\repos\Transform\Transform\bin\Debug\netcoreapp2.1\TransformLibrary.dll
+C:\Users\c3po\source\repos\Transform\Transform\bin\Debug\netcoreapp2.1\TransformLibrary.pdb
+C:\Users\c3po\source\repos\Transform\Transform\obj\Debug\netcoreapp2.1\Transform.csproj.CopyComplete

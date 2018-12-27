@@ -1,0 +1,9 @@
+C:\Users\c3po\source\repos\Transform\TransformLibrary\bin\Debug\netcoreapp2.1\TransformLibrary.deps.json
+C:\Users\c3po\source\repos\Transform\TransformLibrary\bin\Debug\netcoreapp2.1\TransformLibrary.dll
+C:\Users\c3po\source\repos\Transform\TransformLibrary\bin\Debug\netcoreapp2.1\TransformLibrary.pdb
+C:\Users\c3po\source\repos\Transform\TransformLibrary\obj\Debug\netcoreapp2.1\TransformLibrary.csprojAssemblyReference.cache
+C:\Users\c3po\source\repos\Transform\TransformLibrary\obj\Debug\netcoreapp2.1\TransformLibrary.csproj.CoreCompileInputs.cache
+C:\Users\c3po\source\repos\Transform\TransformLibrary\obj\Debug\netcoreapp2.1\TransformLibrary.AssemblyInfoInputs.cache
+C:\Users\c3po\source\repos\Transform\TransformLibrary\obj\Debug\netcoreapp2.1\TransformLibrary.AssemblyInfo.cs
+C:\Users\c3po\source\repos\Transform\TransformLibrary\obj\Debug\netcoreapp2.1\TransformLibrary.dll
+C:\Users\c3po\source\repos\Transform\TransformLibrary\obj\Debug\netcoreapp2.1\TransformLibrary.pdb
