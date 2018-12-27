@@ -4,12 +4,12 @@ using System.Linq;
 
 namespace Transform
 {
-    public class Rainbow : ITextTransform
+    public class RainbowTextTransform : ITextTransform
     {
         private readonly Random _random;
         private readonly Array _values;
 
-        public Rainbow()
+        public RainbowTextTransform()
         {
             this._random = new Random();
             this._values = Enum.GetValues(typeof(ConsoleColor));

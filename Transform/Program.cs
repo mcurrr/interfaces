@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
+
 
 namespace Transform
 {
@@ -9,9 +9,9 @@ namespace Transform
         static void Main(string[] args)
         {
             Console.WriteLine("enter some letters");
-            Rainbow rainbowed = new Rainbow();
+            RainbowTextTransform rainbowed = new RainbowTextTransform();
             string input = Console.ReadLine();
- 
+
             TextWriter outputStream = Console.Out;
             rainbowed.Output(input, outputStream);
 

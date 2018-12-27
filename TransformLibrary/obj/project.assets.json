@@ -207,16 +207,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "TransformLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/TransformLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TransformLibrary.dll": {}
-        }
       }
     }
   },
@@ -690,17 +680,11 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "TransformLibrary/1.0.0": {
-      "type": "project",
-      "path": "../TransformLibrary/TransformLibrary.csproj",
-      "msbuildProject": "../TransformLibrary/TransformLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0",
-      "TransformLibrary >= 1.0.0"
+      "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
   "packageFolders": {
@@ -710,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\c3po\\source\\repos\\Transform\\Transform\\Transform.csproj",
-      "projectName": "Transform",
-      "projectPath": "C:\\Users\\c3po\\source\\repos\\Transform\\Transform\\Transform.csproj",
+      "projectUniqueName": "C:\\Users\\c3po\\source\\repos\\Transform\\TransformLibrary\\TransformLibrary.csproj",
+      "projectName": "TransformLibrary",
+      "projectPath": "C:\\Users\\c3po\\source\\repos\\Transform\\TransformLibrary\\TransformLibrary.csproj",
       "packagesPath": "C:\\Users\\c3po\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\c3po\\source\\repos\\Transform\\Transform\\obj\\",
+      "outputPath": "C:\\Users\\c3po\\source\\repos\\Transform\\TransformLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -732,11 +716,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {
-            "C:\\Users\\c3po\\source\\repos\\Transform\\TransformLibrary\\TransformLibrary.csproj": {
-              "projectPath": "C:\\Users\\c3po\\source\\repos\\Transform\\TransformLibrary\\TransformLibrary.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -749,6 +729,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
