@@ -6,7 +6,14 @@ namespace Transform
 {
     public class BackwardsTextTransform : ITextTransform
     {
-        public void Output(string input, TextWriter outputStream)
+        private readonly TextWriter _outputStream;
+
+        public BackwardsTextTransform(TextWriter outputStream)
+        {
+            this._outputStream = outputStream;
+        }
+ 
+        public void Output(string input)
         {
             if (String.IsNullOrEmpty(input)) return;
 
@@ -14,7 +21,7 @@ namespace Transform
             Array.Reverse(array);
             var backwardsOutput = new String(array);
 
-            outputStream.Write(backwardsOutput);
+            this._outputStream.Write(backwardsOutput);
         }
     }
 }

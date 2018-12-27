@@ -8,14 +8,16 @@ namespace Transform
     {
         private readonly Random _random;
         private readonly Array _values;
+        private readonly TextWriter _outputStream;
 
-        public RainbowTextTransform()
+        public RainbowTextTransform(TextWriter outputStream)
         {
             this._random = new Random();
             this._values = Enum.GetValues(typeof(ConsoleColor));
+            this._outputStream = outputStream;
         }
 
-        public void Output(string input, TextWriter outputStream)
+        public void Output(string input)
         {
             if (String.IsNullOrEmpty(input)) return;
 
@@ -28,7 +30,7 @@ namespace Transform
                 var randomValue = this._values.GetValue(randomEnumIndex);
 
                 Console.ForegroundColor = (ConsoleColor)randomValue;
-                outputStream.Write(x);
+                this._outputStream.Write(x);
             });
 
             // back to initial
