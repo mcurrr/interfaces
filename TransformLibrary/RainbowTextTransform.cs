@@ -2,7 +2,8 @@
 using System.IO;
 using System.Linq;
 
-namespace Transform
+
+namespace TransformLibrary
 {
     public class RainbowTextTransform : ITextTransform
     {
@@ -17,7 +18,7 @@ namespace Transform
             this._outputStream = outputStream;
         }
 
-        public void Output(string input)
+        public void Output(string input, string splitter)
         {
             if (String.IsNullOrEmpty(input)) return;
 

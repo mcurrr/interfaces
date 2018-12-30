@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-
+using TransformLibrary;
 
 namespace Transform
 {
@@ -14,11 +14,15 @@ namespace Transform
             string input = Console.ReadLine();
 
             RainbowTextTransform rainbowed = new RainbowTextTransform(outputStream);
-            rainbowed.Output(input);
+            rainbowed.Output(input, "");
             Console.WriteLine();
 
             BackwardsTextTransform backwards = new BackwardsTextTransform(outputStream);
-            backwards.Output(input);
+            backwards.Output(input, "");
+            Console.WriteLine();
+
+            SplitterTextTransform splitted = new SplitterTextTransform(outputStream);
+            splitted.Output(input, "\n");
             Console.WriteLine();
 
             Console.ReadKey();

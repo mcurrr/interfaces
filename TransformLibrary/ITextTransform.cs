@@ -1,9 +1,7 @@
-﻿using System.IO;
-
-namespace Transform
+﻿namespace TransformLibrary
 {
     public interface ITextTransform
     {
-        void Output(string input);
+        void Output(string input, string splitter);
     }
 }

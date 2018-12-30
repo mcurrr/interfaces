@@ -2,7 +2,7 @@
 using System.IO;
 
 
-namespace Transform
+namespace TransformLibrary
 {
     public class BackwardsTextTransform : ITextTransform
     {
@@ -13,7 +13,7 @@ namespace Transform
             this._outputStream = outputStream;
         }
  
-        public void Output(string input)
+        public void Output(string input, string splitter)
         {
             if (String.IsNullOrEmpty(input)) return;
 
