@@ -8,28 +8,32 @@ namespace TransformLibrary
     {
         private readonly TextWriter _outputStream;
 
+        public string Delimeter { get; set; }
+
         public SplitterTextTransform(TextWriter outputStream)
         {
             this._outputStream = outputStream;
-        }
-  
-        private static string AppendAtPosition(string baseString, int position, string character)
-        {
-            var sb = new StringBuilder(baseString);
-
-            for (int i = position; i < sb.Length; i += (position + character.Length))
-                sb.Insert(i, character);
-
-            return sb.ToString();
+            Delimeter = Environment.NewLine;
         }
 
-        public void Output(string input, string splitter)
+        public void Output(string input)
         {
             if (String.IsNullOrEmpty(input)) return;
 
-            var splitted = AppendAtPosition(input, 1, splitter);
+            var splitted = AppendAtPosition(input, 1);
 
             this._outputStream.Write(splitted);
+        }
+
+
+        private string AppendAtPosition(string baseString, int position)
+        {
+            var sb = new StringBuilder(baseString);
+
+            for (int i = position; i < sb.Length; i += (position + Delimeter.Length))
+                sb.Insert(i, Delimeter);
+
+            return sb.ToString();
         }
     }
 }

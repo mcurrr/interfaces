@@ -2,6 +2,6 @@
 {
     public interface ITextTransform
     {
-        void Output(string input, string splitter);
+        void Output(string input);
     }
 }

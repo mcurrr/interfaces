@@ -13,7 +13,7 @@ namespace TransformLibrary
             this._outputStream = outputStream;
         }
  
-        public void Output(string input, string splitter)
+        public void Output(string input)
         {
             if (String.IsNullOrEmpty(input)) return;
 
