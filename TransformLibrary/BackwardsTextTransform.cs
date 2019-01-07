@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using static System.String;
 
 
 namespace TransformLibrary
@@ -15,7 +16,7 @@ namespace TransformLibrary
  
         public void Output(string input)
         {
-            if (String.IsNullOrEmpty(input)) return;
+            if (IsNullOrEmpty(input)) return;
 
             char[] array = input.ToCharArray();
             Array.Reverse(array);
